@@ -31,11 +31,11 @@
 <% end %>
 
 <%= form_with model: @user do |form| %>
-  <%= form.label :username, "username:" %>
-  <%= form.text_field :username %> <br><br>
+  <%= form.label :username, "pick a name:" %>
+  <%= form.text_field :username, :value=>"jon"%> <br><br>
 
   <%= form.label :email, "email:" %>
-  <%= form.text_field :email %> <br><br>
+  <%= form.email_field :email ,placeholder: "eg@mail"%> <br><br>
     
   <%= form.label :password, "password:" %>
   <%= form.password_field :password %> <br><br>
